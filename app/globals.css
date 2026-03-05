@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Tus colores temáticos */
+  --color-violeta-rapunzel: #6a0dad;
+  --color-oro-rapunzel: #ffd700;
+
+  /* Fuentes vinculadas al layout.tsx */
+  --font-pinyon: var(--font-pinyon);
+  --font-montserrat: var(--font-montserrat);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Fondo veteado profesional con oscurecimiento */
+.bg-imagen-veteada {
+  /* Superponemos un gradiente negro semitransparente sobre la imagen */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('/fondo1.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  min-height: 100vh;
+  width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Clase maestra para centrar todo el contenido */
+.contenedor-centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Ancho optimizado para móviles */
+  margin: 0 auto;
+  text-align: center;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Clase para centrado absoluto de elementos internos */
+.element-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fuentes personalizadas */
+.font-garabateada { font-family: var(--font-pinyon); }
+.font-cuento { font-family: var(--font-montserrat); }
+
+/* Estilo para imágenes (Sin borde dorado) */
+.img-card {
+  width: 100%;
+  max-width: 2000px;
 }
