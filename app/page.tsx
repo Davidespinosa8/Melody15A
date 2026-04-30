@@ -31,7 +31,7 @@ export default function Invitacion() {
         {/* 1. F1 */}
         <ScrollReveal>
           <div className="element-center my-1">
-            <Image src="/f1.png" alt="Foto Principal Melody" width={300} height={400} className="img-card" />
+            <Image src="/fotos/1.png" alt="Foto Principal Melody" width={300} height={400} className="img-card" />
           </div>
         </ScrollReveal>
         
@@ -41,7 +41,7 @@ export default function Invitacion() {
             <Image src="/firuletes1.png" alt="Decoración Melody" width={220} height={55} />
             <div className="my-8 text-center">
                 <h1 className="text-3xl text-oro-rapunzel font-cuento">MIS XV AÑOS</h1>
-                <h2 className="text-6xl text-oro-rapunzel font-garabateada mt-4">Melody Mansilla</h2>
+                <h2 className="text-6xl text-oro-rapunzel font-garabateada mt-4">Melody Medina</h2>
             </div>
           </div>
         </ScrollReveal>
@@ -78,11 +78,11 @@ export default function Invitacion() {
         {/* 6. Lugar con GIF y texto */}
         <ScrollReveal>
           <div className="element-center my-10 text-center">
-            <a href="https://maps.google.com/?cid=18109730558355379175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">
-               <Image src="/ubicacion.gif" alt="Ubicación" width={300} height={300} className="img-card" />
+            <a href="https://maps.app.goo.gl/pJ4BGVdEapmocPk4A" target="_blank">
+              <Image src="/ubicacion.gif" alt="Ubicación" width={300} height={300} className="img-card" />
             </a>
             <p className="mt-6 text-oro-rapunzel text-5xl font-pinyon font-medium">
-               sin direccion 1234 <br/>salon sin nombre
+              Benito de Miguel 872 <br/>Salón Osiris
             </p>
           </div>
         </ScrollReveal>
@@ -90,7 +90,7 @@ export default function Invitacion() {
         {/* 7. Playlist */}
         <ScrollReveal>
           <div className="element-center my-10 text-center">
-            <Image src="/f3.png" alt="Foto Playlist" width={300} height={400} className="img-card" />
+            <Image src="/fotos/3.png" alt="Foto Playlist" width={300} height={400} className="img-card" />
             <p className="mt-10 text-oro-rapunzel font-semibold text-lg font-cuento">Elegí la música que querés que suene</p>
             <button className="mt-6 bg-oro-rapunzel text-violeta-rapunzel px-10 py-4 rounded-full font-bold font-cuento shadow-lg">
               Agregar canción
@@ -113,7 +113,7 @@ export default function Invitacion() {
         {/* 9. Final */}
         <ScrollReveal>
           <div className="element-center my-20 mb-32 text-center">
-            <Image src="/f4.png" alt="Foto Final Melody" width={300} height={400} className="img-card" />
+            <Image src="/fotos/6.png" alt="Foto Final Melody" width={300} height={400} className="img-card" />
             <Image src="/firuletes3.png" alt="Decoración Final" width={220} height={55} className="mt-16" />
             <Image src="/Sol.png" alt="Sol" width={120} height={120} className="mt-12" />
             <h3 className="text-6xl text-oro-rapunzel font-garabateada mt-10">Melody Mansilla</h3>

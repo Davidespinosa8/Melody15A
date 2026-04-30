@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "XV Adriana López",
+  title: "XV Melody Medina",
   description: "Invitación digital a mis 15 años",
 };
 
