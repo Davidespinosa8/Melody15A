@@ -219,6 +219,17 @@ export default function Invitacion() {
 
         <ScrollReveal>
           <div className="element-center my-5 gap-6 text-center">
+            <Image
+              src="/rapunzel.png"
+              alt="Decoración QR"
+              width={450}
+              height={55}
+            />
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <div className="element-center my-5 gap-6 text-center">
             <div className="element-center gap-2">
               <Image
                 src="/vestimenta.png"
