@@ -88,7 +88,7 @@ export default function Invitacion() {
                 MIS XV AÑOS
               </h1>
               <h2 className="text-6xl text-oro-rapunzel font-garabateada mt-4">
-                Melody Medina
+                Melody Mansilla
               </h2>
             </div>
           </div>
@@ -215,6 +215,32 @@ export default function Invitacion() {
           </div>
         </ScrollReveal>
 
+        <ScrollReveal>
+          <div className="element-center my-5 gap-6 text-center">
+            <Image
+              src="/vestimenta.png"
+              alt="Decoración QR"
+              width={220}
+              height={55}
+            />
+
+            <p className="text-oro-rapunzel text-lg font-cuento my-6">
+              Codigo de vestimenta <br />Informal
+            </p>
+
+            <Image
+              src="/regalo.png"
+              alt="Regalo CBU"
+              width={220}
+              height={55}
+            />
+
+            <p className="text-oro-rapunzel text-lg font-cuento my-6">
+              Si queres dejarme <br />un regalito te dejo aca
+            </p>
+          </div>
+        </ScrollReveal>
+
         {/* 8. QR */}
         <ScrollReveal>
           <div className="element-center my-5 gap-6 text-center">
@@ -271,7 +297,7 @@ export default function Invitacion() {
             />
 
             <h3 className="text-6xl text-oro-rapunzel font-garabateada mt-10">
-              Melody Medina
+              Melody Mansilla
             </h3>
           </div>
         </ScrollReveal>
