@@ -7,6 +7,7 @@ import { Play, Pause, QrCode, MessageCircle } from "lucide-react";
 
 export default function Invitacion() {
   const [playing, setPlaying] = useState(false);
+  const [showAliasModal, setShowAliasModal] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const [timeLeft, setTimeLeft] = useState({
@@ -127,14 +128,15 @@ export default function Invitacion() {
         <ScrollReveal>
           <div className="element-center my-5 text-center">
             <Image
-              src="/Fotosprueba.png"
+              src="/Fecha.png"
               alt="30 de Junio 2026"
               width={2000}
               height={2000}
             />
 
             <div className="text-3xl font-pinyon text-oro-rapunzel mt-8">
-              30 . 06 . 2026
+              30 . 06 . 2026 <br />
+              21:30 hs
             </div>
           </div>
         </ScrollReveal>
@@ -217,27 +219,70 @@ export default function Invitacion() {
 
         <ScrollReveal>
           <div className="element-center my-5 gap-6 text-center">
-            <Image
-              src="/vestimenta.png"
-              alt="Decoración QR"
-              width={220}
-              height={55}
-            />
+            <div className="element-center gap-2">
+              <Image
+                src="/vestimenta.png"
+                alt="Código de vestimenta"
+                width={150}
+                height={150}
+                className="vestimenta-img"
+              />
 
-            <p className="text-oro-rapunzel text-lg font-cuento my-6">
-              Codigo de vestimenta <br />Informal
+              <p className="text-oro-rapunzel text-xl font-pinyon leading-tight mt-1 mb-6">
+                Código de vestimenta <br />
+                <span className="text-2xl">Informal</span>
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setShowAliasModal(true)}
+              className="gift-button"
+            >
+              <Image
+                src="/regalo.png"
+                alt="Regalo CBU"
+                width={190}
+                height={190}
+                className="gift-float"
+              />
+            </button>
+
+            <p className="text-oro-rapunzel text-xl font-bold font-cuento">
+              Si querés dejarme <br />un regalito, te dejo acá
             </p>
 
-            <Image
-              src="/regalo.png"
-              alt="Regalo CBU"
-              width={220}
-              height={55}
-            />
+            {showAliasModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4"
+                onClick={() => setShowAliasModal(false)}
+              >
+                <div
+                  className="alias-modal"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    type="button"
+                    onClick={() => setShowAliasModal(false)}
+                    className="absolute right-4 top-3 text-oro-rapunzel text-2xl"
+                  >
+                    ×
+                  </button>
 
-            <p className="text-oro-rapunzel text-lg font-cuento my-6">
-              Si queres dejarme <br />un regalito te dejo aca
-            </p>
+                  <p className="text-oro-rapunzel font-pinyon text-4xl mb-4">
+                    Para mi regalito
+                  </p>
+
+                  <p className="text-oro-rapunzel font-cuento text-sm tracking-[0.25em] uppercase mb-2">
+                    Alias
+                  </p>
+
+                  <p className="text-oro-rapunzel font-cuento text-2xl font-bold">
+                    Prueba.alias
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </ScrollReveal>
 
