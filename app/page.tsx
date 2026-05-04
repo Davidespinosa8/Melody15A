@@ -237,13 +237,13 @@ export default function Invitacion() {
                 alt="Código de vestimenta"
                 width={150}
                 height={150}
-                className="vestimenta-img"
+                className="vestimenta-img gift-float"
               />
 
-              <p className="text-oro-rapunzel text-xl font-montserrat leading-tight mt-1 mb-6">
+              <p className="text-oro-rapunzel text-3xl font-pinyon leading-tight mt-1 mb-6">
                 Código de vestimenta <br />
-                <span className="text-2xl">Elegante Sport</span>
-                <span className="text-2xl">Se reservan los colores azules, <br /> y lilas(morados) para la quincieañera</span>
+                <span className="text-xl font-montserrat font-semibold">Elegante Sport</span><br />
+                <span className="text-xl font-montserrat">Se reservan los colores azules, <br /> y lilas(morados) para la quincieañera</span>
               </p>
             </div>
 
@@ -309,7 +309,7 @@ export default function Invitacion() {
               height={55}
             />
             <a href="https://drive.google.com/drive/folders/1gRbbDJDi6NpgAYDdl_BAe78hT6ebzgut">
-              <p className="text-oro-rapunzel text-lg font-cuento my-6">
+              <p className="text-oro-rapunzel text-lg font-cuento my-6 font-semibold">
               ¡Compartí tus fotos!
               </p>
             
@@ -337,6 +337,34 @@ export default function Invitacion() {
               <MessageCircle size={22} />
               Confirmar Asistencia
             </a>
+          </div>
+        </ScrollReveal>
+
+        {/* Instagram */}
+        <ScrollReveal>
+          <div className="element-center my-16 text-center gap-6">
+            
+            <a
+              href="https://www.instagram.com/melmansillla/?utm_source=ig_web_button_share_sheet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ig-button"
+            >
+              <Image
+                src="/Instagram1.png"
+                alt="Instagram Melody"
+                width={210}
+                height={210}
+                className="ig-float gift-float"
+              />
+            </a>
+
+            <p className="text-oro-rapunzel text-lg font-cuento leading-relaxed max-w-[260px]">
+              Subí tus fotos y etiquetame para que pueda verlas ✨
+              <br />
+              <span className="text-xl font-bold">@melmansillla</span>
+            </p>
+
           </div>
         </ScrollReveal>
 
