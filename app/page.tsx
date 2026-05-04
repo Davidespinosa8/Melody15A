@@ -129,13 +129,13 @@ export default function Invitacion() {
           <div className="element-center my-5 text-center">
             <Image
               src="/Fecha.png"
-              alt="30 de Junio 2026"
+              alt="1 de Julio 2026"
               width={2000}
               height={2000}
             />
 
             <div className="text-3xl font-pinyon text-oro-rapunzel mt-8">
-              30 . 06 . 2026 <br />
+              01 . 07 . 2026 <br />
               21:30 hs
             </div>
           </div>
@@ -210,10 +210,11 @@ export default function Invitacion() {
             <p className="mt-10 text-oro-rapunzel font-semibold text-lg font-cuento">
               Elegí la música que querés que suene
             </p>
-
-            <button className="mt-6 bg-oro-rapunzel text-violeta-rapunzel px-10 py-4 rounded-full font-bold font-cuento shadow-lg">
+            <a href="https://youtube.com/playlist?list=PLKQTJ1Ct3r4o55oUQghh5OUrn5DQLKwPi&si=ApyS3IW1a6R7vJxY">
+              <button  className="mt-6 bg-oro-rapunzel text-violeta-rapunzel px-10 py-4 rounded-full font-bold font-cuento shadow-lg">
               Agregar canción
-            </button>
+              </button>
+            </a>
           </div>
         </ScrollReveal>
 
@@ -241,7 +242,8 @@ export default function Invitacion() {
 
               <p className="text-oro-rapunzel text-xl font-pinyon leading-tight mt-1 mb-6">
                 Código de vestimenta <br />
-                <span className="text-2xl">Informal</span>
+                <span className="text-2xl">Elegante Sport</span>
+                <span className="text-2xl">Se reservan los colores azules, <br /> y lilas(morados) para la quincieañera</span>
               </p>
             </div>
 
@@ -289,7 +291,7 @@ export default function Invitacion() {
                   </p>
 
                   <p className="text-oro-rapunzel font-cuento text-2xl font-bold">
-                    Prueba.alias
+                    melomansilla
                   </p>
                 </div>
               </div>
@@ -306,15 +308,28 @@ export default function Invitacion() {
               width={220}
               height={55}
             />
-
-            <p className="text-oro-rapunzel text-lg font-cuento my-6">
+            <a href="https://drive.google.com/drive/folders/1gRbbDJDi6NpgAYDdl_BAe78hT6ebzgut">
+              <p className="text-oro-rapunzel text-lg font-cuento my-6">
               ¡Compartí tus fotos!
-            </p>
+              </p>
+            
 
-            <div className="bg-white p-4 rounded-2xl shadow-inner my-2">
-              <QrCode size={120} className="text-violeta-rapunzel" />
-            </div>
-
+              <div className="bg-transparent p-4 rounded-2xl shadow-inner my-2">
+                <button
+                  type="button"
+                  className="qr-button"
+                >
+                  <Image
+                    src="/urlqr.png"
+                    alt="qr drive"
+                    width={190}
+                    height={190}
+                    className="gift-float"
+                  />
+                </button>
+              </div>
+            </a>
+            
             <a
               href="https://wa.me/5492364543792?text=Hola%21%20Quiero%20confirmar%20mi%20asistencia%20a%20los%2015%20de%20Melody."
               className="flex items-center justify-center gap-3 bg-oro-rapunzel text-violeta-rapunzel px-10 py-5 rounded-full font-bold font-cuento shadow-lg mt-8"
