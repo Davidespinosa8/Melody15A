@@ -12,16 +12,24 @@
 
 /* Fondo veteado profesional con oscurecimiento */
 .bg-imagen-veteada {
-  /* Superponemos un gradiente negro semitransparente sobre la imagen */
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-    url('/fondo1.png'); 
+    url('/fondo1.png');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
   min-height: 100vh;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bg-imagen-veteada {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+  }
 }
 
 /* Clase maestra para centrar todo el contenido */

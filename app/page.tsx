@@ -135,7 +135,7 @@ export default function Invitacion() {
             />
 
             <div className="text-3xl font-pinyon text-oro-rapunzel mt-8">
-              01 . 07 . 2026 <br />
+              04 . 07 . 2026 <br />
               21:30 hs
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function Invitacion() {
                 className="vestimenta-img"
               />
 
-              <p className="text-oro-rapunzel text-xl font-pinyon leading-tight mt-1 mb-6">
+              <p className="text-oro-rapunzel text-xl font-montserrat leading-tight mt-1 mb-6">
                 Código de vestimenta <br />
                 <span className="text-2xl">Elegante Sport</span>
                 <span className="text-2xl">Se reservan los colores azules, <br /> y lilas(morados) para la quincieañera</span>
